@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="src/http_maxcdn.bootstrapcdn.com_bootstrap_4.5.2_css_bootstrap.css">
+    <link rel="stylesheet" href="src/bootstrap-5.0.2-dist/css/bootstrap.css">
     <style>
         /* Стили для верхней голубой полосы */
         .navbar {
@@ -38,17 +38,19 @@
             color: #ffffff;
         }
     </style>
-
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="nav-link" href="#"> <img class="rounded-image" src="img/fnz_logo.png" alt="FNZ" width="25" height="25"> 6,666 </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse d-flex align-items-center" id="navbarNav">
+        <a class="nav-link mr-auto" href="#">
+            <img class="rounded-image mr-2" src="img/fnz_logo.png" alt="FNZ" width="25" height="25">
+            5,555 0.02.1v 22.02.2024
+        </a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">iLusha80 <img class="rounded-image" src="img/ant_main.jpg" alt="Avatar" width="30" height="30"></a>
@@ -56,6 +58,7 @@
         </ul>
     </div>
 </nav>
+
 
 <div class="container mt-5">
     <div class="row">
@@ -69,7 +72,7 @@
 
 <footer class="mt-5">
     <div class="container">
-        <div class="row d-flex flex-column flex-md-row"> <!-- Добавлен класс d-flex и flex-column -->
+        <div class="row d-flex align-items-center d-inline-block"> <!-- Добавлен класс d-flex и flex-column -->
             <div class="col-md-4 mb-2">
                 <button class="btn btn-primary btn-block" id="playButton">Играть</button>
             </div>
