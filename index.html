@@ -34,6 +34,9 @@
             /*opacity: 0.5;*/
             /* Другие свойства стиля */
         }
+        .nav-link {
+            color: #ffffff;
+        }
     </style>
 
 </head>
@@ -55,7 +58,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-3"></div>
-        <div class="col-md-6 border p-5"> <!-- Центральный блок -->
+        <div class="col-md-6 border p-5" id="mainBlock"> <!-- Центральный блок -->
             <!-- Пустой центральный блок -->
         </div>
         <div class="col-md-3"></div>
@@ -66,7 +69,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <button class="btn btn-primary btn-block">Играть</button>
+                <button class="btn btn-primary btn-block" id="playButton">Играть</button>
             </div>
             <div class="col-md-4">
                 <button class="btn btn-primary btn-block">Вызов</button>
@@ -77,6 +80,9 @@
         </div>
     </div>
 </footer>
+
+<!-- Добавляем скрипт в конце body -->
+<script src="src/js/events_main_buttons.js"></script>
 
 </body>
 </html>
