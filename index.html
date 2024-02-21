@@ -48,10 +48,12 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-<!--        <a class="navbar-brand" href="#">iLusha80</a>-->
-<!--        <a class="nav-link element" href="#"> <img src="img/bell2.png" alt="*" width="27" height="27"> </a>-->
-        <a class="nav-link" href="#">iLusha80 <img class="rounded-image" src="img/ant_main.jpg" alt="Avatar" width="30" height="30"></a>
+    <div class="collapse navbar-collapse d-flex align-items-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">iLusha80 <img class="rounded-image" src="img/ant_main.jpg" alt="Avatar" width="30" height="30"></a>
+            </li>
+        </ul>
     </div>
 </nav>
 
@@ -67,15 +69,15 @@
 
 <footer class="mt-5">
     <div class="container">
-        <div class="row d-flex flex-column flex-md-row">
-            <div class="col-md-4">
+        <div class="row d-flex flex-column flex-md-row"> <!-- Добавлен класс d-flex и flex-column -->
+            <div class="col-md-4 mb-2">
                 <button class="btn btn-primary btn-block" id="playButton">Играть</button>
             </div>
-            <div class="col-md-4">
-                <button class="btn btn-primary btn-block">Вызов</button>
+            <div class="col-md-4 mb-2">
+                <button class="btn btn-primary btn-block" id="goBattle">Вызов</button>
             </div>
-            <div class="col-md-4">
-                <button class="btn btn-primary btn-block">Турниры</button>
+            <div class="col-md-4 mb-2">
+                <button class="btn btn-primary btn-block" id="turnaments">Турниры</button>
             </div>
         </div>
     </div>
