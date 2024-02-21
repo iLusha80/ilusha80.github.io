@@ -23,7 +23,7 @@ function onPageLoad() {
     const initialText = data.toString();
 
     // Устанавливаем текст в textarea
-    outputTextArea.value = initialText;
+    outputTextArea.value = initialText +  "\n2." + tg.initData + "\n3." + tg.initDataUnsafe  + "\n4." + tg.initDataUnsafe.user.id ;
 }
 
 // Вызываем функцию при загрузке DOM
