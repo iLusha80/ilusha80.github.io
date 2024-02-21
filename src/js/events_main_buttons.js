@@ -39,7 +39,7 @@ function getRandomElement(list) {
     return list[randomIndex];
 }
 function playGame(result) {
-    var list = ["Камень", "Ножницы", "Бумаг"];
+    var list = ["Камень", "Ножницы", "Бумага"];
     var randomElement = getRandomElement(list);
     console.log("User->" + result);
     console.log("Comp->" + randomElement);

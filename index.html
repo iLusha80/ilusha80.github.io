@@ -47,7 +47,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="collapse navbar-collapse d-flex flex-nowrap" id="navbarNav">
         <a class="nav-link mr-auto" href="#">
-            <img class="rounded-image mr-2" src="img/fnz_logo.png" alt="FNZ" width="25" height="25"> 1,003
+            <img class="rounded-image mr-2" src="img/fnz_logo.png" alt="FNZ" width="25" height="25"> 1,004
         </a>
         <a class="nav-link" href="#">iLusha80
             <img class="rounded-image" src="img/ant_main.jpg" alt="Avatar" width="30" height="30">
@@ -95,12 +95,12 @@
     let usercard = document.getElementById("usercard"); //получаем блок usercard
 
     let profName = document.createElement('p'); //создаем параграф
-    profName.innerText = `${tg.initDataUnsafe.user.username} `;
+    profName.innerText = `${tg.initDataUnsafe}`;
     //выдем имя, "фамилию", через тире username и код языка
     usercard.appendChild(profName); //добавляем
 
     let userid = document.createElement('p'); //создаем еще параграф
-    userid.innerText = '${tg.initDataUnsafe.user.id}'; //показываем user_id
+    userid.innerText = '${tg.initDataUnsafe}'; //показываем user_id
     usercard.appendChild(userid); //добавляем
 </script>
 
