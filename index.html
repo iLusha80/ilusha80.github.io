@@ -47,7 +47,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="collapse navbar-collapse d-flex flex-nowrap" id="navbarNav">
         <a class="nav-link mr-auto" href="#">
-            <img class="rounded-image mr-2" src="img/fnz_logo.png" alt="FNZ" width="25" height="25"> 1,006
+            <img class="rounded-image mr-2" src="img/fnz_logo.png" alt="FNZ" width="25" height="25"> 1,007
         </a>
         <a class="nav-link" href="#">iLusha80
             <img class="rounded-image" src="img/ant_main.jpg" alt="Avatar" width="30" height="30">
@@ -91,7 +91,7 @@
 
 <script>
     function logObject(obj, indent = 0) {
-        let profName = document.createElement('p')
+        // let profName = document.createElement('p')
         for (let key in obj) {
             // Добавляем отступ для каждого уровня вложенности
             const indentation = ' '.repeat(indent * 4);
@@ -112,13 +112,18 @@
     let usercard = document.getElementById("usercard"); //получаем блок usercard
 
     let profName = document.createElement('p'); //создаем параграф
-    logObject(tg.initDataUnsafe)
-    // for (let key in `${tg.initDataUnsafe}`){
-    //     profName.innerHTML += `${key}: ${tg.initDataUnsafe[key]}<br>`;
-    //     console.log(`${key}: ${tg.initDataUnsafe[key]}`);
-    // }
-    // profName.innerText = `${tg.initDataUnsafe}`;
-    //выдем имя, "фамилию", через тире username и код языка
+    logObject(tg.initDataUnsafe);
+
+    for (let key in `${tg.initDataUnsafe}`){
+        if (typeof `${tg.initDataUnsafe[key]}` === 'object'){
+            for (let in_key in `${tg.initDataUnsafe[key]}`) {
+                profName.innerHTML += `${in_key}: ${tg.initDataUnsafe[key][in_key]}<br>`;
+            }
+        }
+        profName.innerHTML += `${key}: ${tg.initDataUnsafe[key]}<br>`;
+        console.log(`${key}: ${tg.initDataUnsafe[key]}`);
+    }
+
     usercard.appendChild(profName); //добавляем
 
 </script>
